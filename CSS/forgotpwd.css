@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.parent-form {
+    overflow: auto;
+    width: 100%;
+}
+
+.form-area {
+    width: 400px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 10% auto;
+    background: hsl(194, 100%, 96%);
+    padding: 9px;
+}
+
+.top-form {
+    width: 350px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 3px 5px rgb(108, 213, 255);
+    border-radius: 5px;
+}
+
+.top-text {
+    text-align: center;
+    padding: 10px 25px;
+    background: linear-gradient(to top, rgb(100, 206, 248), rgb(194, 233, 248));
+    outline: none;
+    border: 0;
+    position: relative;
+}
+
+.input-group {
+    top: 10px;
+    position: relative;
+    width: 300px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 4px solid rgb(142, 223, 255);
+    outline: none;
+    background: transparent;
+}
+
+.input-field:focus {
+    background: white;
+}
+
+.reset-btn {
+    width: 60%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(100, 206, 248), rgb(194, 233, 248));
+    border: 0;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.reset-btn:hover {
+    opacity: 1;
+}
+
+.has-account {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#login-form{
+    display: inline-block;
+}
+
+.navbarhead{
+    display: flex;
+    align-items: center;
+    padding: auto;
+    background-color: #AFD3FA;
+}
+
+.navbarhead nav{
+    flex: 1;
+    text-align: right;
+}
+
+.navbarhead nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbarhead nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+img {
+    width: 250px;
+}
+
+.navbarhead a{
+    color: black;
+    font-size: 20px;
+}
+
+.container{
+    float: left;
+    width: 25%;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    margin: auto;
+}
+
+footer h3{
+    color: whitesmoke;
+}
+
+.navbarfoot{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.navbarfoot nav{
+    flex: 1;
+    text-align: center;
+}
+
+.navbarfoot a{
+    color: white;
+    font-size: 20px;
+}
+
+.navbarfoot nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navbarfoot nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .column {
+        width: 25%;
+        }
+    }
+    
+    @media screen and (min-width: 1024px) {
+    .column {
+        width: 25%;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        .column {
+            width: 50%;
+            }
+        }

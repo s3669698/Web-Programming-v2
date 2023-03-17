@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(66, 65, 61);
+    text-align: center;
+}
+
+.parent-div {
+    overflow: auto;
+    width: 100%;
+}
+
+.div1 {
+    width: 65%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin: 10% auto;
+    background: rgb(235, 250, 255);
+    padding: 9px;
+}
+
+.header {
+    width: 85%;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 3px 5px rgb(108, 213, 255);
+    border-radius: 5px;
+}
+
+.top-text {
+    text-align: center;
+    padding: 10px 25px;
+    background: linear-gradient(to top, rgb(100, 206, 248), rgb(194, 233, 248));
+    position: relative;
+}
+
+.container-div {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    display: table;
+}
+
+.avatar-div {
+    padding: 15px;
+    background: linear-gradient(to bottom, rgb(138, 124, 103), rgb(161, 151, 138));
+    width: 200px;
+    position: absolute;
+    top: 20%;
+}
+
+.avatar-div>img {
+    max-width: 150px;
+}
+
+.avatar-div > p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.header-div {
+    width: 60%;
+    position: absolute;
+    right: 2px;
+    top: 15px;
+}
+
+.info-div {
+    padding: 15px;
+    width: 60%;
+    text-align: justify;
+    position: absolute;
+    top: 55px;
+    right: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: 0;
+    border-right: 0;
+    border-left:0 ;
+    border-bottom: 4px solid rgb(142, 223, 255);
+    outline: none;
+    background: transparent;
+}
+
+.btn {
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(100, 206, 248), rgb(194, 233, 248));
+    border: 0;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.input-field:focus {
+    background: white;
+}

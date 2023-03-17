@@ -1,0 +1,147 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.parent-form {
+    /* height: 100%; */
+    overflow: auto;
+    width: 100%;
+}
+
+.form-area {
+    width: 400px;
+    display: block;
+    /* min-height: 800px; */
+    overflow: hidden;
+    position: relative;
+    margin: 10% auto;
+    background: hsl(194, 100%, 96%);
+    padding: 9px;
+}
+
+.top-form {
+    width: 200px;
+    margin: 30px auto;
+    position: relative;
+    box-shadow: 0 0 3px 5px rgb(108, 213, 255);
+    border-radius: 5px;
+}
+
+.top-text {
+    text-align: center;
+    padding: 10px 25px;
+    background: linear-gradient(to top, rgb(100, 206, 248), rgb(194, 233, 248));
+    outline: none;
+    border: 0;
+    position: relative;
+}
+
+.input-group {
+    top: 10px;
+    position: relative;
+    width: 300px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: auto;
+    border-left: rgb(142, 223, 255);
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 4px solid rgb(142, 223, 255);
+    outline: none;
+    background: transparent;
+}
+
+.input-field:focus, .input-field-first:focus, .input-field-last:focus {
+    background: white;
+}
+
+.input-field-first, .input-field-last {
+    width: 50%;
+    float: left;
+    padding: 10px 0;
+    margin: auto;
+    border-left: 0;
+    border-right: 4px solid rgb(142, 223, 255);
+    border-top: 0;
+    border-bottom: 4px solid rgb(142, 223, 255);
+    outline: none;
+    background: transparent;
+}
+
+.input-field-last {
+    border-right: 0;
+}
+
+fieldset,
+#store-type {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rad, .store-extra {
+    display: none;
+}
+
+#rad1:checked+#type-label+div+.store-extra {
+    display: block;
+}
+
+.btn,
+.clear-btn,
+.register-btn {
+    width: 50%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, rgb(100, 206, 248), rgb(194, 233, 248));
+    border: 0;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+
+.clear-btn {
+    background: linear-gradient(to bottom, rgb(255, 35, 35), rgb(255, 196, 196));
+}
+
+.clear-btn:hover,
+.register-btn:hover,
+.btn:hover {
+    opacity: 1;
+}
+
+.terms {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.terms-label,
+#category-label,
+.has-account>p,
+.has-account>a  {
+    font-size: 14px;
+}
+
+input[type="radio"]:checked+label { 
+    color: green;
+}
+
+.has-account {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#register-form {
+    display: inline-block;
+}
